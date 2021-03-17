@@ -1,11 +1,18 @@
 # linkedin_
-Returns google results from a queries. Based on programmable search engine and custom search json api.
+Returns the google results from speific queries. It's a React frontend and Node with Express on the backend.
+Search is enabled using a programmable search engine and the custom search api from google.
 
-Example: Enter a valid linkedin url and obtain the google search results of that query. You can select to return between 1 or 5 results for query. Edit the number below the input bar.
+Example: Enter a valid linkedin url and obtain the google search results of that query. You can return between 1 or 5 results for query by editing the number (next to search button).
 
-To run the app:
+## To run the app:
 
-root npm install on the root, 
+On the Project root
+  run npm install 
 
-Client: 1. run npm install 2. run npm start
-Server: 1. run npm install 2. run nodemon or nodemon start
+On the Client root
+  run npm install 
+  run npm start
+
+On the Server: 
+  run npm install
+  run nodemon or nodemon start
