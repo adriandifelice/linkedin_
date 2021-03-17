@@ -47,6 +47,10 @@
       margin-bottom: 3vh;
     }
 
+    .result:hover{
+      box-shadow: 2px 1px 1px rgb(187, 187, 187);
+    }
+
     .userEvent {
       display: flex;
       flex-direction: column;
@@ -102,4 +106,5 @@
       width: 90vw;
       margin-left: 2vw;
       text-align: center;
+      border: solid 1px grey;
     }
