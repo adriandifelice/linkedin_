@@ -1,20 +1,17 @@
 require('dotenv').config()
 
 const express = require('express');
-const Router = require('./routes/index');
-const Port = 3000;
-
+const Router = require('./router');
+const Port = 3005;
+const cors = require('cors')
 
 const app = express();
 
 
-
-app.use(dotenv);
+app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
-
-app.use('/', Router);
+app.use(Router);
 
 
 app.listen(Port, () => {
