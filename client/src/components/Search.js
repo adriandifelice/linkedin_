@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Results from '../components/Results'
 import '../styles/App.css'
 
@@ -7,8 +7,9 @@ import '../styles/App.css'
 
 const Search = () => {
   const [userInput, setUserInput] = useState('');
-  const [results, setResults] = useState();
+  const [results, setResults] = useState({});
   const [nResults, setNResults] = useState(1);
+   
 
 async function handleCheck () {
   console.log('userInput', userInput)
@@ -31,8 +32,10 @@ async function handleCheck () {
       } catch (error) {
        alert('Invalid url')
       }
-  }
+      console.log('results', results);
 
+  }
+ 
  
   return ( 
     <div className="App">
@@ -54,7 +57,3 @@ async function handleCheck () {
 }
  
 export default Search;
-
-
-
-    
