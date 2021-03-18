@@ -16,3 +16,5 @@ On the Client root
 On the Server: 
   run npm install
   run nodemon or nodemon start
+  
+  Make sure to create a .env file following the .env_copy format. The api key is provided by google's programmable search engine as well as the engine id.
