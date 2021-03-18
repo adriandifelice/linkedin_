@@ -24,13 +24,11 @@ async function handleCheck () {
         .then(res => res.status === 200?
             res.json()
             .then(data => setResults(data))
-            :alert('invalid url'));
-       
-      } catch (error) {
+            :alert('invalid url'));     
+      } 
+       catch (error) {
        alert('Invalid url')
       }
-      console.log('results', results);
-
   }
  
  

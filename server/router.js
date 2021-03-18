@@ -32,10 +32,12 @@ async function handleClick (userInput) {
 
 router.post('/', async function(req, res) {
   const userInput = req.body.userInput;
+
   if(is_url(userInput)) {
     const searchData = await handleClick(userInput);
     return res.status(200).send(searchData);
- } else {
+ } 
+ else {
   res.status(400).send('invalid');
  }
 });
