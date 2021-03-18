@@ -1,20 +1,17 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Results from '../components/Results'
 import '../styles/App.css'
-
-
 
 
 const Search = () => {
   const [userInput, setUserInput] = useState('');
   const [results, setResults] = useState({});
   const [nResults, setNResults] = useState(1);
-   
+  const be_url = `http://localhost:3005/`;
 
 async function handleCheck () {
-  console.log('userInput', userInput)
   try {
-        await fetch(`http://localhost:3005/`, {
+        await fetch(be_url, {
           method: 'POST',
           headers: {
             'Accept': 'application/json',
